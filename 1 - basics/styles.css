@@ -1,6 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
 
 body {
   margin: 30px;
   font-family: "Poppins";
+}
+.grid-container {
+  display: grid;
+  max-width: 900px;
+  background: #eee;
+  margin: 0 auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 200px 200px;
+  grid-gap: 16px;
+  /* justify-items: start;
+  align-items: center; */
+}
+.grid-container > div {
+  background: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #777;
+}
+.grid-container > div:nth-child(1) {
+  grid-column: 1 / span 2;
+  background: red;
+  align-self: center;
+  justify-self: center;
+}
+.grid-container > div:nth-child(2) {
+  grid-column: span 3;
+  align-self: center;
+  justify-self: center;
+}
+.grid-container > div:nth-child(3) {
+  grid-column: span 3;
+  align-self: center;
+  justify-self: center;
+}
+.grid-container > div:nth-child(4) {
+  grid-column: 2 / span 2;
+  background: red;
+  align-self: center;
+  justify-self: center;
+}
+.grid-container > div:nth-child(5) {
+  grid-column: span 3;
+  align-self: center;
+  justify-self: center;
+}
+.grid-container > div:nth-child(6) {
+  grid-column: span 3;
+  align-self: center;
+  justify-self: center;
 }
